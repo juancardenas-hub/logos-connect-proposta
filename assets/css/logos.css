@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Logos Connect — tema sobre o layout base (Tailwind v4 compilado)
+   Mantém logo e cores da marca: verde #98AE0F · verde-escuro #707D20 · grafite #2A2C2B
+   ========================================================================== */
+/* Verde-claro utilitário e amarelo do logo como pontuação */
+.bg-hero { background-color: #F4F5EC; }
+
+/* Faixa antifraude (dentro do header fixo) */
+.faixa-antifraude { background: #1C1E1D; color: #F1F1EE; font-size: .82rem; font-weight: 500; text-align: center; padding: 7px 16px; line-height: 1.35; border-bottom: 1px solid rgba(255,255,255,.08); }
+.faixa-antifraude strong { color: #FFDB00; font-weight: 700; }
+.faixa-antifraude a { color: #fff; text-decoration: underline; }
+.preview-aviso { position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999998; background: #FFDB00; color: #1C1E1D; font-size: .74rem; font-weight: 700; text-align: center; padding: 5px 16px; }
+body.has-preview { padding-bottom: 28px; }
+
+/* Selo "a confirmar" (remover na versão final) */
+.confirmar { display: inline; border: 1.5px dashed #C99A00; color: #6E5300; background: #FFF6CC; border-radius: 6px; padding: 0 6px; font-weight: 600; font-size: .92em; line-height: 1.35; }
+.confirmar::before { content: "✎ "; }
+.bg-secondary .confirmar, .text-white .confirmar { background: #FFF6CC; color: #6E5300; }
+
+/* Logo no header e footer */
+.header-area .logo img { width: 168px; }
+@media (min-width: 1024px) { .header-area .logo img { width: 190px; } }
+
+/* Pré-análise em passos */
+.triagem { background: #fff; border: 1px solid var(--color-border); border-radius: 1.25rem; box-shadow: 0 20px 50px rgba(28,30,29,.08); }
+.triagem__barra { height: 6px; background: var(--color-background); border-radius: 999px; overflow: hidden; }
+.triagem__barra span { display: block; height: 100%; background: var(--color-primary); width: 16%; transition: width .3s ease; }
+.triagem__passo[hidden] { display: none; }
+.opcoes { display: grid; gap: 10px; grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 560px) { .opcoes { grid-template-columns: 1fr; } }
+.opcao { position: relative; }
+.opcao input { position: absolute; opacity: 0; inset: 0; pointer-events: none; }
+.opcao label { display: block; padding: 14px 16px; border: 2px solid var(--color-border); border-radius: 12px; font-weight: 600; color: var(--color-title_black); cursor: pointer; transition: .15s; background: #fff; }
+.opcao input:checked + label { border-color: var(--color-primary); background: #F3F6DD; }
+.opcao input:focus-visible + label { outline: 3px solid #EEF2CF; }
+.campo { display: grid; gap: 6px; }
+.campo label { font-weight: 600; color: var(--color-title_black); font-size: .95rem; }
+.campo input, .campo select, .campo textarea { font-family: inherit; font-size: 1rem; padding: 13px 14px; border: 2px solid var(--color-border); border-radius: 12px; width: 100%; background: #fff; color: var(--color-title_black); }
+.campo input:focus, .campo select:focus, .campo textarea:focus { outline: none; border-color: var(--color-primary); }
+.consent { display: flex; gap: 10px; align-items: flex-start; font-size: .88rem; color: var(--color-paragraph_black); }
+.consent input { margin-top: 5px; width: auto; }
+.erro { color: #C40000; font-size: .88rem; font-weight: 600; margin-top: 8px; display: none; }
+.triagem__resumo dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0; text-align: left; }
+.triagem__resumo dt { font-weight: 700; color: var(--color-title_black); }
+.triagem__resumo dd { margin: 0; }
+.btn-whats { background: #25D366 !important; border-color: #25D366 !important; color: #073B1B !important; }
+.btn-whats:hover { background: #1FBF5A !important; }
+
+/* WhatsApp flutuante */
+.whats-flutuante { position: fixed; right: 18px; bottom: 18px; z-index: 9999990; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.22); }
+body.has-preview .whats-flutuante { bottom: 44px; }
+.whats-flutuante svg { width: 30px; height: 30px; fill: #fff; }
+
+/* Parceiros */
+.parceiros-grid img { max-height: 38px; width: auto; filter: grayscale(1); opacity: .75; transition: .25s; }
+.parceiros-grid > div:hover img { filter: none; opacity: 1; }
+
+/* Tabelas */
+.tabela { width: 100%; border-collapse: collapse; min-width: 640px; font-size: .95rem; }
+.tabela th, .tabela td { padding: 13px 14px; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+.tabela th { font-size: .74rem; text-transform: uppercase; letter-spacing: .06em; color: var(--color-paragraph_black); font-weight: 600; background: var(--color-background); }
+.tabela tr:last-child td { border-bottom: 0; }
+.tabela tr.destaque td { background: #F3F6DD; font-weight: 700; color: var(--color-title_black); }
+.tabela--mini { min-width: 0; font-size: .9rem; }
+.tabela--mini th, .tabela--mini td { padding: 9px 8px; }
+
+/* Ajustes gerais */
+.leading-tight\! { line-height: 1.12 !important; }
+img.rotate { animation: logos-rotate 12s linear infinite; }
+@keyframes logos-rotate { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { img.rotate { animation: none; } }
+.faq-icon { transition: transform .3s; }
+.single-faq.active .faq-icon { transform: rotate(180deg); }
+.numero-grande { font-variant-numeric: tabular-nums; }
+
+/* Menu mobile na paleta Logos (substitui a imagem de fundo do layout) */
+@media screen and (max-width: 1024px) {
+  .main-menu { background-image: linear-gradient(160deg, #2E3A0E 0%, #1A2007 100%) !important; }
+}
+
+/* ==========================================================================
+   Títulos: peso 600, tamanhos menores e mais respiro (evita o aspecto pesado/comprimido)
+   ========================================================================== */
+main h1 { font-weight: 600 !important; letter-spacing: -0.015em !important; line-height: 1.14 !important; font-size: clamp(1.9rem, 1.2rem + 2.6vw, 3rem) !important; }
+main h2:not(.counter) { font-weight: 600 !important; letter-spacing: -0.012em !important; line-height: 1.18 !important; font-size: clamp(1.55rem, 1.05rem + 1.8vw, 2.35rem) !important; }
+main h3 { font-weight: 600 !important; letter-spacing: -0.005em; }
+footer h2 { font-weight: 600 !important; letter-spacing: -0.012em; line-height: 1.18 !important; font-size: clamp(1.55rem, 1.05rem + 1.8vw, 2.35rem) !important; }
+.counter, .numero-grande { font-weight: 700 !important; letter-spacing: -0.02em; }
+.header-area .main-menu > ul > li > a { font-weight: 500; }
+
+/* ==========================================================================
+   Efeitos (Three.js + GSAP)
+   ========================================================================== */
+.fx-canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; display: block; }
+/* nos heros claros, o campo se concentra à direita/topo para não competir com o título */
+.bg-hero .fx-canvas { -webkit-mask-image: linear-gradient(100deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 40%, #000 72%); mask-image: linear-gradient(100deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.25) 40%, #000 72%); }
+@media (max-width: 768px) { .bg-hero .fx-canvas { -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,.6) 100%); mask-image: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,.6) 100%); } }
+.fx-linha { display: block; height: 2px; margin-top: -1px; background: linear-gradient(90deg, #98AE0F, rgba(152,174,15,.15)); border-radius: 2px; transform: scaleX(0); transform-origin: left center; }
+.fx-sweep { position: absolute; top: -20%; left: 0; width: 22%; height: 140%; z-index: 0; pointer-events: none;
+  background: linear-gradient(105deg, rgba(255,255,255,0) 0%, rgba(198,214,90,.09) 45%, rgba(255,255,255,0) 100%); transform: skewX(-14deg); mix-blend-mode: screen; }
+[data-fx-sweep] > *:not(.fx-sweep):not(.fx-canvas):not(img) { position: relative; z-index: 1; }
+[data-tilt] { will-change: transform; }
+@media (prefers-reduced-motion: reduce) { .fx-sweep { display: none; } .fx-linha { transform: none; } }

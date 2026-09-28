@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@source "../../*.html";
+
+@theme {
+  --color-primary: #98AE0F;
+  --color-secondary: #212909;
+  --color-title_black: #1C1E1D;
+  --color-title_white: #ffffff;
+  --color-background: #F7F7F2;
+  --color-border: #E4E5DD;
+  --color-paragraph_white: #C9CEB4;
+  --color-paragraph_black: #444744;
+  --color-Cool_Blue: #4F5A14;
+  --color-Navy_Green: #707D20;
+  --color-Wine_Berry: #2A2C2B;
+  --color-Marine: #2F3609;
+  --color-bg_play: #FFFFFF66;
+  --color-demo: #EAE9E5;
+  --color-demo_paragraph: #333333;
+  --color-verde-claro: #EEF2CF;
+  --color-verde-escuro: #707D20;
+  --color-amarelo: #FFDB00;
+  --color-grafite: #2A2C2B;
+  --font-primary: "Onest", sans-serif;
+}
+
+/* componentes do layout (header, menu, botões, faq, sliders…) */
+@import "./template-components.css";
