@@ -14,7 +14,7 @@ ob_start();
 				<div class="md:max-w-137.5 w-full">
 					<div class="flex items-center gap-2.5" data-subtitle>
 						<img class="rotate" src="<?php echo $static_url; ?>/img/title-icon.svg" alt="">
-						<p class="text-sm sm:text-base font-semibold leading-[1.1]! text-verde-escuro uppercase">Correspondente bancário · desde 1998</p>
+						<p class="text-sm sm:text-base font-semibold leading-[1.1]! text-verde-escuro uppercase">Desde 1998</p>
 					</div>
 					<h1 class="text-4xl sm:text-[40px] md:text-5xl lg:text-[52px] xl:text-[60px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Crédito com garantia de imóvel para a sua empresa, com quem faz isso há 28 anos.</h1>
 					<p class="text-base sm:text-lg text-paragraph_black mt-4" data-excerpt>Analisamos o seu caso, comparamos as propostas dos bancos parceiros e acompanhamos o processo até o dinheiro entrar na conta. Sem custo de consultoria e sem pagamento antecipado.</p>
