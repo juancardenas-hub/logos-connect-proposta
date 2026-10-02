@@ -11,7 +11,6 @@
                     <a href="https://www.instagram.com/logosconnect07/" target="_blank" rel="noopener" class="w-8.5 h-8.5 bg-white/10 rounded-full flex items-center justify-center text-white duration-300 hover:bg-primary hover:text-title_black" aria-label="Instagram"><svg class="w-4 h-4 fill-current"><use href="#instagram"></use></svg></a>
                     <a href="https://www.facebook.com/profile.php?id=100086576811987" target="_blank" rel="noopener" class="w-8.5 h-8.5 bg-white/10 rounded-full flex items-center justify-center text-white duration-300 hover:bg-primary hover:text-title_black" aria-label="Facebook"><svg class="w-4 h-4 fill-current"><use href="#facebook"></use></svg></a>
                     <a href="<?php echo WHATS_URL; ?>" target="_blank" rel="noopener" class="w-8.5 h-8.5 bg-white/10 rounded-full flex items-center justify-center text-white duration-300 hover:bg-primary hover:text-title_black" aria-label="WhatsApp" data-origem="footer-icone"><span class="w-4 h-4 block"><?php echo ICO_WHATS; ?></span></a>
-                    <span class="text-xs text-paragraph_white ml-1"><span class="confirmar">confirmar perfil oficial do Instagram</span></span>
                 </div>
             </div>
             <div class="w-full lg:w-px h-px lg:h-auto bg-white/10"></div>
@@ -39,7 +38,7 @@
         </div>
         <div class="py-6 text-sm text-paragraph_white leading-relaxed border-b border-white/10">
             <p>A Logos Connect Ltda. (CNPJ 02.794.809/0001-68) atua como <span class="text-white">correspondente bancário</span> nos termos da Resolução CMN nº 4.935/2021 e não é instituição financeira. As operações de crédito são concedidas pelas instituições financeiras parceiras, que definem taxa, prazo, valor aprovado e demais condições após análise de crédito e avaliação da garantia. A Logos Connect não cobra nenhum valor do cliente pela consultoria e não solicita pagamento antecipado em hipótese alguma.</p>
-            <p class="mt-2"><span class="text-white">Informações de crédito (exemplo representativo):</span> <span class="confirmar">preencher com dados da instituição parceira</span> — taxa a partir de ___% a.m. (___% a.a.) + IPCA, prazo de ___ a ___ meses, CET de ___% a.a. Exemplo: R$ 300.000 em 180 meses, parcela inicial de R$ ___, total a pagar de R$ ___. Sujeito a análise de crédito, avaliação do imóvel e custos de cartório, avaliação e IOF conforme legislação vigente.</p>
+            <p class="mt-2"><span class="text-white">Condições de crédito:</span> crédito com garantia de imóvel com taxas de 1,19% a 1,59% ao mês, prazo de até 240 meses e valor de até 60% do imóvel avaliado; financiamento imobiliário em até 420 meses; crédito com garantia de veículo com taxas de 1,59% a 3,79% ao mês e prazo de até 60 meses. O Custo Efetivo Total (CET) é informado na proposta antes da contratação. Sujeito a análise de crédito, avaliação da garantia e custos de cartório, avaliação e IOF conforme legislação vigente.</p>
         </div>
         <div class="py-5 md:py-6 flex items-center justify-between gap-4 flex-col sm:flex-row">
             <p class="text-paragraph_white text-sm text-center sm:text-left">© <span data-ano>2026</span> Logos Connect. Todos os direitos reservados.</p>

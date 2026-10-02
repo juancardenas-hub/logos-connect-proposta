@@ -14,7 +14,7 @@ ob_start();
 				<div class="md:max-w-137.5 w-full">
 					<div class="flex items-center gap-2.5" data-subtitle><img class="rotate" src="<?php echo $static_url; ?>/img/title-icon.svg" alt=""><p class="text-sm sm:text-base font-semibold leading-[1.1]! text-verde-escuro uppercase">Crédito com garantia de imóvel · pessoa jurídica</p></div>
 					<h1 class="text-4xl sm:text-[40px] md:text-5xl lg:text-[52px] xl:text-[58px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Use o imóvel da empresa ou do sócio para fortalecer o caixa. Sem vender, sem sair dele.</h1>
-					<p class="text-base sm:text-lg text-paragraph_black mt-4" data-excerpt>Taxas a partir de <span class="confirmar">1,08% a.m. + IPCA</span>, prazo de até <span class="confirmar">240 meses</span> e liberação de até <span class="confirmar">60%</span> do valor do imóvel. Uma análise, mais de 15 instituições, um especialista até o fim.</p>
+					<p class="text-base sm:text-lg text-paragraph_black mt-4" data-excerpt>Taxas de 1,19% a 1,59% a.m., prazo de até 240 meses e liberação de até 60% do valor do imóvel. Uma análise, vários bancos parceiros, um especialista até o fim.</p>
 					<div class="mt-6 sm:mt-8 lg:mt-10 flex items-center gap-3 flex-wrap" data-button>
 						<?php echo btn_arrow('Fazer pré-análise gratuita', '#pre-analise'); ?>
 						<?php echo btn_whats('Falar com especialista', 'hero-cgi', 'button-autline-dark text-title_black! hover:text-white!'); ?>
@@ -36,7 +36,7 @@ ob_start();
 								<tr><td>Empréstimo sem garantia</td><td>4,2% a 6,8%</td><td>64% a 88%</td></tr>
 								<tr class="destaque"><td>Garantia de imóvel</td><td>0,99% a 1,80% + IPCA</td><td>14% a 24% + IPCA</td></tr>
 							</tbody></table></div>
-						<p class="text-xs text-paragraph_black mt-3">Faixas médias do mercado brasileiro em 2026, para comparação. <span class="confirmar">Logos valida as faixas e a fonte antes de publicar</span></p>
+						<p class="text-xs text-paragraph_black mt-3">Faixas de referência do mercado, apenas para comparação. Não são ofertas.</p>
 					</div>
 					<div class="absolute -top-6 -right-4 -z-1 w-[55%] bg-primary aspect-square rounded-full opacity-90" data-circle></div>
 				</div>
@@ -79,17 +79,17 @@ ob_start();
 						<h2 class="text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-title_white mt-4">Requisitos, sem letra miúda</h2>
 						<ul class="flex flex-col gap-4 mt-8 text-paragraph_white">
 							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Empresa com CNPJ ativo</strong> (ME, EPP, Ltda., S/A) ou sócio garantidor com imóvel pessoal.</span></li>
-							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Imóvel urbano com matrícula regular:</strong> casa, apartamento, sala, loja, galpão ou terreno. Imóvel rural: <span class="confirmar">analisado caso a caso</span>.</span></li>
+							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Imóvel urbano com matrícula regular:</strong> casa, apartamento, sala, loja, galpão ou terreno. Outros tipos de imóvel: consulte.</span></li>
 							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Imóvel quitado ou com saldo devedor:</strong> financiado também pode ser avaliado, conforme o saldo.</span></li>
-							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Valor mínimo de imóvel:</strong> <span class="confirmar">R$ 200 mil</span>. Crédito de <span class="confirmar">R$ 50 mil a R$ 10 milhões</span>.</span></li>
-							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Restrição no nome</strong> não impede a análise; a garantia real reduz a exigência das instituições. <span class="confirmar">Logos confirma política</span></span></li>
+							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Valor mínimo de imóvel:</strong> R$ 100 mil. Crédito a partir de R$ 50 mil.</span></li>
+							<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span class="flex-1"><strong class="text-white">Empresa com restrição no nome</strong> também pode ser analisada: a garantia real reduz a exigência das instituições.</span></li>
 						</ul>
 					</div>
 					<div class="lg:max-w-135 w-full p-5 sm:p-7 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-[34px]">
 						<h3 class="text-white text-xl font-semibold">O que costuma reduzir o valor aprovado</h3>
-						<p class="mt-3 text-paragraph_white">Preferimos avisar antes: o avaliador do banco costuma atribuir ao imóvel um valor abaixo do que o proprietário espera, e o percentual liberado é calculado sobre o valor avaliado. Na prática, a liberação fica com frequência entre <span class="confirmar">30% e 50%</span> do valor de mercado, e não no teto de 60%.</p>
+						<p class="mt-3 text-paragraph_white">Preferimos avisar antes: o avaliador do banco costuma atribuir ao imóvel um valor abaixo do que o proprietário espera, e o percentual liberado é calculado sobre o valor avaliado. Na prática, a liberação costuma ficar abaixo do teto de 60% do valor de mercado.</p>
 						<p class="mt-3 text-paragraph_white">Por isso, a nossa pré-análise já parte de uma estimativa conservadora. Se o valor fechar acima dela, ótimo. Se não, você não terá planejado o caixa com um número que não existia.</p>
-						<p class="mt-4 text-sm text-paragraph_white border-t border-white/10 pt-4"><strong class="text-white">Para pessoa jurídica</strong>, o IOF é de 0,95% fixo sobre o valor, mais 0,0082% ao dia (limitado a 365 dias), fora do Simples Nacional. Mostramos esse impacto no valor líquido antes da assinatura. <span class="confirmar">confirmar alíquotas vigentes</span></p>
+						<p class="mt-4 text-sm text-paragraph_white border-t border-white/10 pt-4"><strong class="text-white">Para pessoa jurídica</strong>, o IOF segue as alíquotas vigentes para empresas. Mostramos esse impacto no valor líquido antes da assinatura.</p>
 					</div>
 				</div>
 			</div>
@@ -110,13 +110,13 @@ ob_start();
 			<?php echo section_title('Como funciona', 'Do primeiro contato ao dinheiro na conta', 'Dizemos desde o início o que depende de nós, o que depende do banco e o que depende do cartório.'); ?>
 			<?php echo passos([
 				['titulo' => 'Pré-análise sem documentos', 'texto' => 'Você responde seis perguntas. Em até um dia útil, um especialista diz se o caso tem viabilidade e em quais instituições.', 'tags' => [['Logos', 1], ['1 dia útil', 0]]],
-				['titulo' => 'Documentação e proposta', 'texto' => 'Reunimos a documentação da empresa, dos sócios e do imóvel e montamos a proposta que será defendida nas mesas de crédito.', 'tags' => [['Logos + você', 1], ['<span class="confirmar">3 a 7 dias</span>', 0]]],
-				['titulo' => 'Comparação de propostas', 'texto' => 'Recebemos as condições das instituições e apresentamos lado a lado: taxa, CET, prazo, parcela e valor líquido que entra na conta.', 'tags' => [['Logos', 1], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Avaliação do imóvel', 'texto' => 'O banco envia um avaliador. É aqui que o valor pode ser ajustado; por isso trabalhamos com uma estimativa realista desde o começo.', 'tags' => [['Banco', 0], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Contrato e registro em cartório', 'texto' => 'Assinatura do contrato e registro da alienação fiduciária na matrícula do imóvel. Acompanhamos o cartório até a conclusão.', 'tags' => [['Banco + cartório', 0], ['<span class="confirmar">10 a 20 dias</span>', 0]]],
-				['titulo' => 'Liberação do crédito', 'texto' => 'Com o registro concluído, o valor é liberado na conta da empresa ou usado para quitar as dívidas combinadas.', 'tags' => [['Banco', 0], ['<span class="confirmar">1 a 3 dias</span>', 0]]],
+				['titulo' => 'Documentação e proposta', 'texto' => 'Reunimos a documentação da empresa, dos sócios e do imóvel e montamos a proposta que será defendida nas mesas de crédito.', 'tags' => [['Logos + você', 1]]],
+				['titulo' => 'Comparação de propostas', 'texto' => 'Recebemos as condições das instituições e apresentamos lado a lado: taxa, CET, prazo, parcela e valor líquido que entra na conta.', 'tags' => [['Logos', 1]]],
+				['titulo' => 'Avaliação do imóvel', 'texto' => 'O banco envia um avaliador. É aqui que o valor pode ser ajustado; por isso trabalhamos com uma estimativa realista desde o começo.', 'tags' => [['Banco', 0]]],
+				['titulo' => 'Contrato e registro em cartório', 'texto' => 'Assinatura do contrato e registro da alienação fiduciária na matrícula do imóvel. Acompanhamos o cartório até a conclusão.', 'tags' => [['Banco + cartório', 0]]],
+				['titulo' => 'Liberação do crédito', 'texto' => 'Com o registro concluído, o valor é liberado na conta da empresa ou usado para quitar as dívidas combinadas.', 'tags' => [['Banco', 0]]],
 			]); ?>
-			<p class="text-sm text-paragraph_black mt-6">Prazo total estimado de <span class="confirmar">30 a 45 dias úteis</span>, variando conforme instituição, cartório e documentação.</p>
+			<p class="text-sm text-paragraph_black mt-6">Prazo total médio de cerca de 20 dias, variando conforme instituição, cartório e documentação.</p>
 		</div>
 	</section>
 
@@ -149,9 +149,9 @@ ob_start();
 					<p class="mt-3 text-base sm:text-lg text-paragraph_black">Os custos do contrato são os mesmos em qualquer correspondente ou banco, e você conhece todos antes de assinar.</p>
 				</div>
 				<div class="lg:max-w-150 w-full grid sm:grid-cols-2 gap-4">
-					<div class="bg-white border border-border p-6 rounded-2xl"><h3 class="text-title_black text-lg font-semibold">Avaliação do imóvel</h3><p class="mt-2 text-paragraph_black">Laudo feito por engenheiro credenciado pela instituição. <span class="confirmar">R$ ___ a R$ ___</span>, conforme banco e cidade.</p></div>
+					<div class="bg-white border border-border p-6 rounded-2xl"><h3 class="text-title_black text-lg font-semibold">Avaliação do imóvel</h3><p class="mt-2 text-paragraph_black">Laudo feito por engenheiro credenciado pela instituição. O valor varia conforme banco e cidade e pode ser incluído na operação.</p></div>
 					<div class="bg-white border border-border p-6 rounded-2xl"><h3 class="text-title_black text-lg font-semibold">Registro em cartório</h3><p class="mt-2 text-paragraph_black">Registro da alienação fiduciária na matrícula. Tabela do cartório do estado do imóvel.</p></div>
-					<div class="bg-white border border-border p-6 rounded-2xl"><h3 class="text-title_black text-lg font-semibold">IOF</h3><p class="mt-2 text-paragraph_black">Imposto federal sobre a operação. Para PJ, 0,95% + 0,0082% ao dia. <span class="confirmar">confirmar</span></p></div>
+					<div class="bg-white border border-border p-6 rounded-2xl"><h3 class="text-title_black text-lg font-semibold">IOF</h3><p class="mt-2 text-paragraph_black">Imposto federal sobre a operação. Calculado conforme as alíquotas vigentes e incluído na operação.</p></div>
 					<div class="bg-secondary p-6 rounded-2xl"><h3 class="text-primary text-lg font-semibold">Taxa da Logos</h3><p class="mt-2 text-white text-2xl font-bold">R$ 0</p><p class="mt-1 text-paragraph_white text-sm">Nunca, em nenhuma etapa. Se alguém pedir pagamento em nosso nome, é golpe.</p></div>
 				</div>
 			</div>
@@ -165,8 +165,8 @@ ob_start();
 				<div class="w-28 h-28 rounded-full bg-verde-claro border-2 border-dashed border-[#C99A00] flex items-center justify-center text-verde-escuro text-3xl font-bold shrink-0">AB</div>
 				<div>
 					<div class="flex items-center gap-2.5"><img class="rotate" src="<?php echo $static_url; ?>/img/title-icon.svg" alt=""><span class="text-sm font-semibold leading-[1.1]! text-verde-escuro uppercase">Quem cuida do seu caso</span></div>
-					<h3 class="text-title_black text-2xl font-semibold mt-3">Ademilson Bevenutto <span class="confirmar">cargo</span></h3>
-					<p class="mt-2 text-paragraph_black">À frente da Logos desde 1998. Analisa pessoalmente cada caso, escolhe as instituições, negocia as condições e acompanha cartório e liberação. <span class="confirmar">Logos revisa o texto e envia foto</span></p>
+					<h3 class="text-title_black text-2xl font-semibold mt-3">Ademilson Bevenutto</h3>
+					<p class="mt-2 text-paragraph_black">À frente da Logos desde 1998. Analisa pessoalmente cada caso, escolhe as instituições, negocia as condições e acompanha cartório e liberação.</p>
 					<div class="mt-5"><?php echo btn_whats('Falar com o Ademilson', 'especialista', 'button-primary btn-whats'); ?></div>
 				</div>
 			</div>
@@ -181,8 +181,8 @@ ob_start();
 				['O imóvel continua sendo meu? Posso continuar usando?', 'Sim. O imóvel fica em alienação fiduciária como garantia, mas continua no seu nome e no seu uso: morar, alugar, operar a empresa nele. Ao quitar o contrato, a garantia é baixada na matrícula.'],
 				['O imóvel pode ser de um sócio ou de um familiar?', 'Sim. O sócio entra como garantidor e o crédito é concedido para a empresa. Imóvel de familiar também é aceito por algumas instituições, com a anuência do proprietário e do cônjuge, quando houver.'],
 				['Imóvel financiado serve como garantia?', 'Depende do saldo devedor e da instituição. Desde a Lei 14.711/2023 (Marco Legal das Garantias), a parte já paga do imóvel pode garantir um novo crédito. Também é possível transferir o financiamento atual para outro banco e liberar a diferença.'],
-				['Quanto consigo com um imóvel de R$ 1 milhão?', 'O teto costuma ser de <span class="confirmar">60%</span> do valor <em>avaliado</em> pelo banco. Como a avaliação tende a ficar abaixo do valor de mercado, na prática o crédito fica entre <span class="confirmar">R$ 300 mil e R$ 500 mil</span> nesse exemplo. Na pré-análise, damos uma estimativa realista para o seu imóvel.'],
-				['Empresa com restrição no nome consegue?', 'A garantia real reduz muito o risco para a instituição, então a restrição não encerra a análise. Cada banco tem uma política; enviamos o caso só para os que aceitam o seu perfil. <span class="confirmar">Logos confirma</span>'],
+				['Quanto consigo com um imóvel de R$ 1 milhão?', 'O teto é de 60% do valor <em>avaliado</em> pelo banco, ou seja, até R$ 600 mil se a avaliação confirmar R$ 1 milhão. Como a avaliação tende a ficar abaixo do valor de mercado, o valor final costuma ser menor. Na pré-análise, damos uma estimativa realista para o seu imóvel.'],
+				['Empresa com restrição no nome consegue?', 'A garantia real reduz muito o risco para a instituição, então a restrição não encerra a análise. Cada banco tem uma política; enviamos o caso só para os que aceitam o seu perfil.'],
 				['Quais documentos vão ser pedidos?', 'Na pré-análise, nenhum. Depois: contrato social e faturamento da empresa, documentos e comprovante de renda dos sócios, matrícula atualizada e IPTU do imóvel. A lista exata depende da instituição e é enviada pelo especialista.'],
 				['A taxa é fixa ou varia?', 'A maioria das operações é indexada ao IPCA (taxa + inflação). Algumas instituições oferecem taxa pré-fixada, geralmente mais alta. Mostramos as duas opções, quando disponíveis, com o CET de cada uma.'],
 				['E se eu não conseguir pagar?', 'O contrato prevê renegociação e a lei garante prazos e notificações antes de qualquer medida sobre o imóvel. Por isso trabalhamos com uma parcela que cabe no caixa, e não com o máximo que o banco aprovaria. Falamos sobre isso abertamente na análise.'],
@@ -197,4 +197,4 @@ ob_start();
 </main>
 <?php
 $content = ob_get_clean();
-render_page('cgi-empresas.html', 'Crédito com garantia de imóvel para empresas | Logos Connect', 'Capital de giro, reorganização de dívidas e expansão com garantia de imóvel da empresa ou do sócio. Comparação de propostas em mais de 15 instituições. Consultoria sem custo, desde 1998.', $content);
+render_page('cgi-empresas.html', 'Crédito com garantia de imóvel para empresas | Logos Connect', 'Capital de giro, reorganização de dívidas e expansão com garantia de imóvel da empresa ou do sócio. Comparação de propostas entre bancos parceiros. Consultoria sem custo, desde 1998.', $content);

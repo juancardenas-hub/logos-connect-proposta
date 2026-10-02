@@ -5,11 +5,7 @@ define('WHATS_URL', 'https://wa.me/' . WHATS_NUM . '?text=' . rawurlencode('Olá
 define('ICO_WHATS', '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5c.1-.2 0-.4 0-.5L9.2 6.9c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.7-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.1 15 3.7 13.5 3.7 12c0-4.6 3.7-8.3 8.3-8.3s8.3 3.7 8.3 8.3-3.7 8.2-8.3 8.2z"/></svg>');
 
 $PARCEIROS = [
-    ['btg-pactual', 'BTG Pactual'], ['banco-inter', 'Banco Inter'], ['creditas', 'Creditas'], ['cashme', 'CashMe'],
-    ['banco-paulista', 'Banco Paulista'], ['banco-sofisa', 'Banco Sofisa'], ['banco-daycoval', 'Banco Daycoval'],
-    ['banco-bv', 'Banco BV'], ['banco-rodobens', 'Banco Rodobens'], ['galleria-bank', 'Galleria Bank'],
-    ['crediblue', 'Crediblue'], ['pontte', 'Pontte'], ['libra-credito', 'Libra Crédito'], ['lendme', 'LendMe'],
-    ['virgo', 'Virgo'], ['keycash', 'Keycash'], ['wiz', 'Wiz'],
+    ['btg-pactual', 'BTG Pactual'], ['santander', 'Santander'], ['banco-inter', 'Banco Inter'],
 ];
 
 function ico($name, $class = 'w-6 h-6') {
@@ -150,14 +146,16 @@ function parceiros_bloco($titulo = 'Instituições com as quais operamos', $fund
     global $PARCEIROS, $static_url;
     $logos = '';
     foreach ($PARCEIROS as $p) {
-        $logos .= '<div class="bg-white border border-border rounded-xl p-4 flex items-center justify-center min-h-19"><img src="' . $static_url . '/img/parceiros/' . $p[0] . '.webp" alt="' . $p[1] . '" loading="lazy" width="160" height="40"></div>';
+        $img = file_exists(__DIR__ . '/../../../assets/img/parceiros/' . $p[0] . '.webp')
+            ? '<img src="' . $static_url . '/img/parceiros/' . $p[0] . '.webp" alt="' . $p[1] . '" loading="lazy" width="160" height="40">'
+            : '<span class="text-xl font-bold text-paragraph_black">' . $p[1] . '</span>';
+        $logos .= '<div class="bg-white border border-border rounded-xl p-4 flex items-center justify-center min-h-19">' . $img . '</div>';
     }
     return '
 <section class="section-spacing-md ' . $fundo . '" id="parceiros">
   <div class="container">
     ' . section_title('Multibanco', $titulo, 'Uma única análise, enviada apenas às instituições que fazem sentido para o seu perfil. Você compara as propostas e escolhe.') . '
-    <div class="parceiros-grid grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">' . $logos . '</div>
-    <p class="text-center text-sm text-paragraph_black mt-6"><span class="confirmar">Logos confirma a lista atual de parceiros ativos e a autorização de uso das marcas</span></p>
+    <div class="parceiros-grid grid grid-cols-3 gap-3 sm:gap-4 max-w-200 mx-auto">' . $logos . '</div>
   </div>
 </section>';
 }

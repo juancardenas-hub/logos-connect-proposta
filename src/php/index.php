@@ -17,7 +17,7 @@ ob_start();
 						<p class="text-sm sm:text-base font-semibold leading-[1.1]! text-verde-escuro uppercase">Correspondente bancário · desde 1998</p>
 					</div>
 					<h1 class="text-4xl sm:text-[40px] md:text-5xl lg:text-[52px] xl:text-[60px] font-bold leading-[1.1]! text-title_black mt-4 md:mt-5" data-title>Crédito com garantia de imóvel para a sua empresa, com quem faz isso há 28 anos.</h1>
-					<p class="text-base sm:text-lg text-paragraph_black mt-4" data-excerpt>Analisamos o seu caso, comparamos as propostas de mais de 15 instituições parceiras e acompanhamos o processo até o dinheiro entrar na conta. Sem custo de consultoria e sem pagamento antecipado.</p>
+					<p class="text-base sm:text-lg text-paragraph_black mt-4" data-excerpt>Analisamos o seu caso, comparamos as propostas dos bancos parceiros e acompanhamos o processo até o dinheiro entrar na conta. Sem custo de consultoria e sem pagamento antecipado.</p>
 					<div class="mt-6 sm:mt-8 lg:mt-10 flex items-center gap-3 flex-wrap" data-button>
 						<?php echo btn_arrow('Fazer pré-análise gratuita', '#pre-analise'); ?>
 						<?php echo btn_whats('Falar no WhatsApp', 'hero', 'button-autline-dark text-title_black! hover:text-white!'); ?>
@@ -72,8 +72,8 @@ ob_start();
 						<h2 class="text-3xl md:text-4xl lg:text-[40px] xl:text-5xl font-bold leading-tight text-title_white mt-4">O imóvel parado pode resolver o problema que está no caixa</h2>
 						<p class="mt-4 text-base sm:text-lg text-paragraph_white">Empresas usam o próprio imóvel, ou o imóvel do sócio, para trocar juros altos por uma parcela longa que cabe no fluxo de caixa. O imóvel continua seu.</p>
 						<ul class="flex flex-col gap-4 mt-9 text-paragraph_white">
-							<li class="text-base flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary"><use href="#tmnlList-01"></use></svg><span class="flex-1"><strong class="text-white">Taxas a partir de <span class="confirmar">1,08% a.m. + IPCA</span></strong>, contra 7% a 14% ao mês de cheque especial e rotativo.</span></li>
-							<li class="text-base flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary"><use href="#tmnlList-02"></use></svg><span class="flex-1"><strong class="text-white">Prazo de até <span class="confirmar">240 meses</span></strong> e liberação de até <span class="confirmar">60%</span> do valor avaliado do imóvel.</span></li>
+							<li class="text-base flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary"><use href="#tmnlList-01"></use></svg><span class="flex-1"><strong class="text-white">Taxas a partir de 1,19% a.m.</strong>, contra 7% a 14% ao mês de cheque especial e rotativo.</span></li>
+							<li class="text-base flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary"><use href="#tmnlList-02"></use></svg><span class="flex-1"><strong class="text-white">Prazo de até 240 meses</strong> e liberação de até 60% do valor avaliado do imóvel.</span></li>
 							<li class="text-base flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-1 text-primary"><use href="#tmnlList-03"></use></svg><span class="flex-1"><strong class="text-white">Um especialista do começo ao fim:</strong> a mesma pessoa analisa, negocia com os bancos e acompanha cartório e liberação.</span></li>
 						</ul>
 					</div>
@@ -108,7 +108,7 @@ ob_start();
 						<span class="text-[11px] font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full bg-primary text-title_black">Carro-chefe</span>
 						<span class="w-12 h-12 rounded-xl bg-white/10 text-primary flex items-center justify-center mt-5"><?php echo ico('home'); ?></span>
 						<h3 class="text-white text-xl md:text-2xl font-semibold mt-5">Crédito com garantia de imóvel para empresas</h3>
-						<p class="pt-3 text-white/80 text-base">Até <span class="confirmar">60%</span> do valor do imóvel, prazo de até <span class="confirmar">240 meses</span>, taxas a partir de <span class="confirmar">1,08% a.m. + IPCA</span>. Imóvel residencial ou comercial, da empresa ou do sócio.</p>
+						<p class="pt-3 text-white/80 text-base">Até 60% do valor do imóvel, prazo de até 240 meses, taxas a partir de 1,19% a.m.. Imóvel residencial ou comercial, da empresa ou do sócio.</p>
 						<div class="mt-6"><?php echo btn_arrow('Conhecer a linha', 'cgi-empresas.html'); ?></div>
 					</div>
 				</div>
@@ -139,13 +139,13 @@ ob_start();
 			<?php echo section_title('Como funciona', 'Do primeiro contato ao dinheiro na conta', 'Dizemos desde o início o que depende de nós, o que depende do banco e o que depende do cartório. Sem surpresa no meio do caminho.'); ?>
 			<?php echo passos([
 				['titulo' => 'Pré-análise sem documentos', 'texto' => 'Você responde seis perguntas. Em até um dia útil, um especialista diz se o caso tem viabilidade e em quais instituições.', 'tags' => [['Logos', 1], ['1 dia útil', 0]]],
-				['titulo' => 'Documentação e proposta', 'texto' => 'Reunimos a documentação da empresa, dos sócios e do imóvel e montamos a proposta que será defendida nas mesas de crédito.', 'tags' => [['Logos + você', 1], ['<span class="confirmar">3 a 7 dias</span>', 0]]],
-				['titulo' => 'Comparação de propostas', 'texto' => 'Recebemos as condições das instituições e apresentamos lado a lado: taxa, CET, prazo, parcela e valor líquido que entra na conta.', 'tags' => [['Logos', 1], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Avaliação do imóvel', 'texto' => 'O banco envia um avaliador. É aqui que o valor pode ser ajustado; por isso trabalhamos com uma estimativa realista desde o começo.', 'tags' => [['Banco', 0], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Contrato e registro em cartório', 'texto' => 'Assinatura do contrato e registro da alienação fiduciária na matrícula do imóvel. Acompanhamos o cartório até a conclusão.', 'tags' => [['Banco + cartório', 0], ['<span class="confirmar">10 a 20 dias</span>', 0]]],
-				['titulo' => 'Liberação do crédito', 'texto' => 'Com o registro concluído, o valor é liberado na conta da empresa ou usado para quitar as dívidas combinadas.', 'tags' => [['Banco', 0], ['<span class="confirmar">1 a 3 dias</span>', 0]]],
+				['titulo' => 'Documentação e proposta', 'texto' => 'Reunimos a documentação da empresa, dos sócios e do imóvel e montamos a proposta que será defendida nas mesas de crédito.', 'tags' => [['Logos + você', 1]]],
+				['titulo' => 'Comparação de propostas', 'texto' => 'Recebemos as condições das instituições e apresentamos lado a lado: taxa, CET, prazo, parcela e valor líquido que entra na conta.', 'tags' => [['Logos', 1]]],
+				['titulo' => 'Avaliação do imóvel', 'texto' => 'O banco envia um avaliador. É aqui que o valor pode ser ajustado; por isso trabalhamos com uma estimativa realista desde o começo.', 'tags' => [['Banco', 0]]],
+				['titulo' => 'Contrato e registro em cartório', 'texto' => 'Assinatura do contrato e registro da alienação fiduciária na matrícula do imóvel. Acompanhamos o cartório até a conclusão.', 'tags' => [['Banco + cartório', 0]]],
+				['titulo' => 'Liberação do crédito', 'texto' => 'Com o registro concluído, o valor é liberado na conta da empresa ou usado para quitar as dívidas combinadas.', 'tags' => [['Banco', 0]]],
 			]); ?>
-			<p class="text-sm text-paragraph_black mt-6">Prazo total estimado de <span class="confirmar">30 a 45 dias úteis</span>, variando conforme instituição, cartório e documentação. Prazos exatos são confirmados pela Logos no início do processo.</p>
+			<p class="text-sm text-paragraph_black mt-6">Prazo total médio de cerca de 20 dias, variando conforme instituição, cartório e documentação. Prazos exatos são confirmados pela Logos no início do processo.</p>
 		</div>
 	</section>
 
@@ -172,9 +172,9 @@ ob_start();
 				<div class="lg:max-w-125 w-full grid grid-cols-2 gap-4 sm:gap-5">
 					<div class="col-span-2"><img class="rounded-2xl w-full object-cover aspect-835/310" src="<?php echo $static_url; ?>/img/tpl/escritorio-1.webp" width="846" height="310" alt="" loading="lazy"></div>
 					<div class="bg-secondary p-5 sm:p-7 rounded-2xl"><h3 class="text-primary font-bold leading-[1.1] text-4xl md:text-5xl"><span class="counter" data-target="28">0</span></h3><p class="mt-3 text-white text-base md:text-lg font-semibold">anos de mercado</p><p class="mt-1 text-white/70 text-sm">CNPJ ativo desde 14/10/1998</p></div>
-					<div class="bg-grafite p-5 sm:p-7 rounded-2xl"><h3 class="text-primary font-bold leading-[1.1] text-4xl md:text-5xl"><span class="counter" data-target="15">0</span>+</h3><p class="mt-3 text-white text-base md:text-lg font-semibold">instituições parceiras</p><p class="mt-1 text-white/70 text-sm">bancos e fintechs de crédito</p></div>
-					<div class="bg-white border border-border p-5 sm:p-7 rounded-2xl"><h3 class="text-title_black font-bold leading-[1.1] text-2xl md:text-3xl"><span class="confirmar">R$ ___</span></h3><p class="mt-3 text-title_black text-base font-semibold">em crédito estruturado</p></div>
-					<div class="bg-white border border-border p-5 sm:p-7 rounded-2xl"><h3 class="text-title_black font-bold leading-[1.1] text-2xl md:text-3xl"><span class="confirmar">___</span></h3><p class="mt-3 text-title_black text-base font-semibold">operações concluídas</p></div>
+					<div class="bg-grafite p-5 sm:p-7 rounded-2xl"><h3 class="text-primary font-bold leading-[1.1] text-4xl md:text-5xl">1,19%</h3><p class="mt-3 text-white text-base md:text-lg font-semibold">ao mês</p><p class="mt-1 text-white/70 text-sm">taxa inicial no crédito com garantia de imóvel</p></div>
+					<div class="bg-white border border-border p-5 sm:p-7 rounded-2xl"><h3 class="text-title_black font-bold leading-[1.1] text-2xl md:text-3xl">240 meses</h3><p class="mt-3 text-title_black text-base font-semibold">de prazo máximo</p></div>
+					<div class="bg-white border border-border p-5 sm:p-7 rounded-2xl"><h3 class="text-title_black font-bold leading-[1.1] text-2xl md:text-3xl">3 a 5 min</h3><p class="mt-3 text-title_black text-base font-semibold">para responder no WhatsApp</p></div>
 				</div>
 			</div>
 		</div>
@@ -182,22 +182,6 @@ ob_start();
 
 	<?php echo parceiros_bloco('Instituições com as quais operamos', 'bg-white'); ?>
 
-	<!-- Depoimentos -->
-	<section class="section-spacing-md bg-background" id="depoimentos">
-		<div class="container">
-			<?php echo section_title('Quem já passou por aqui', 'O que dizem os clientes', 'Depoimentos reais, com autorização de cada cliente. Espaços reservados para a Logos preencher.', false, true); ?>
-			<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-sttr-wrapper>
-				<?php foreach (['empresário que usou CGI para capital de giro', 'cliente que reorganizou dívidas', 'financiamento imobiliário'] as $i => $d): ?>
-				<div class="bg-white rounded-2xl border-2 border-dashed border-[#C99A00] p-6 sm:p-8" data-sttr-card>
-					<svg class="w-8 h-8 text-primary fill-current" viewBox="0 0 24 24"><path d="M7.2 17.4c-1.9 0-3.4-1.5-3.4-3.4 0-3.6 2.4-6.7 5.9-8.1l.7 1.5c-2 .8-3.5 2.5-3.9 4.4.3-.1.6-.1.9-.1 1.9 0 3.3 1.5 3.3 3.3s-1.6 2.4-3.5 2.4zm9.6 0c-1.9 0-3.4-1.5-3.4-3.4 0-3.6 2.4-6.7 5.9-8.1l.7 1.5c-2 .8-3.5 2.5-3.9 4.4.3-.1.6-.1.9-.1 1.9 0 3.3 1.5 3.3 3.3s-1.6 2.4-3.5 2.4z"/></svg>
-					<p class="mt-5 text-lg font-semibold text-title_black leading-snug"><span class="confirmar">Depoimento <?php echo $i + 1; ?> — <?php echo $d; ?></span></p>
-					<div class="mt-6 pt-4 border-t border-border"><p class="font-semibold text-title_black">Nome do cliente</p><p class="text-sm text-paragraph_black">Empresa · cidade · ano</p></div>
-				</div>
-				<?php endforeach; ?>
-			</div>
-			<p class="text-center text-sm text-paragraph_black mt-6">Sugestão: coletar avaliações no Google (perfil da empresa) e incorporar aqui a nota e os comentários reais.</p>
-		</div>
-	</section>
 
 	<!-- Pré-análise -->
 	<section class="section-spacing-lg-md relative z-1 overflow-hidden bg-white" id="pre-analise-secao">
@@ -216,7 +200,7 @@ ob_start();
 				['A Logos cobra alguma coisa?', 'Não. A consultoria é gratuita para o cliente. Somos remunerados pela instituição financeira quando a operação é concluída. Os únicos custos são os do próprio contrato: avaliação do imóvel, registro em cartório e IOF, sempre informados antes da assinatura.'],
 				['Posso usar o imóvel do sócio para a empresa?', 'Sim. É comum: o sócio entra como garantidor com o imóvel pessoal e o crédito é concedido para o CNPJ. Também analisamos imóveis de familiares, dependendo da instituição.'],
 				['Imóvel ainda financiado serve?', 'Pode servir, dependendo do saldo devedor e da instituição. Desde o Marco Legal das Garantias (Lei 14.711/2023), é possível usar a parte já paga do imóvel como garantia de um novo crédito. Avaliamos caso a caso.'],
-				['Quanto tempo leva?', 'Em geral, de <span class="confirmar">30 a 45 dias úteis</span> entre a pré-análise e a liberação. A etapa mais longa costuma ser o cartório. Informamos o prazo estimado do seu caso logo na primeira conversa.'],
+				['Quanto tempo leva?', 'Em média, cerca de 20 dias entre a pré-análise e a liberação. A etapa mais longa costuma ser o cartório. Informamos o prazo estimado do seu caso logo na primeira conversa.'],
 			]); ?>
 			<p class="text-center mt-8"><a class="text-verde-escuro font-semibold underline underline-offset-4" href="cgi-empresas.html#faq">Ver todas as perguntas sobre crédito com garantia de imóvel</a></p>
 		</div>

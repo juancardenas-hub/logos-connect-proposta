@@ -23,9 +23,9 @@ ob_start();
 				<div class="md:max-w-125 w-full grid grid-cols-2 gap-4 relative z-1" data-thumbnail>
 					<div class="col-span-2"><img class="rounded-2xl w-full object-cover aspect-[2/1]" src="<?php echo $static_url; ?>/img/tpl/equipe-docs.webp" width="1640" height="1258" alt="" fetchpriority="high"></div>
 					<div class="bg-secondary p-5 sm:p-6 rounded-2xl"><h3 class="text-primary font-bold leading-[1.1] text-4xl"><span class="counter" data-target="28">0</span></h3><p class="mt-2 text-white font-semibold">anos de mercado</p></div>
-					<div class="bg-grafite p-5 sm:p-6 rounded-2xl"><h3 class="text-primary font-bold leading-[1.1] text-4xl"><span class="counter" data-target="15">0</span>+</h3><p class="mt-2 text-white font-semibold">instituições parceiras</p></div>
-					<div class="bg-white border border-border p-5 sm:p-6 rounded-2xl"><h3 class="text-title_black font-bold text-2xl"><span class="confirmar">R$ ___</span></h3><p class="mt-2 text-title_black font-semibold">em crédito estruturado</p></div>
-					<div class="bg-white border border-border p-5 sm:p-6 rounded-2xl"><h3 class="text-title_black font-bold text-2xl"><span class="confirmar">___</span></h3><p class="mt-2 text-title_black font-semibold">famílias e empresas atendidas</p></div>
+					<div class="bg-grafite p-5 sm:p-6 rounded-2xl"><h3 class="text-primary font-bold leading-[1.1] text-4xl">1,19%</h3><p class="mt-2 text-white font-semibold">taxa inicial ao mês (CGI)</p></div>
+					<div class="bg-white border border-border p-5 sm:p-6 rounded-2xl"><h3 class="text-title_black font-bold text-2xl">240 meses</h3><p class="mt-2 text-title_black font-semibold">de prazo máximo</p></div>
+					<div class="bg-white border border-border p-5 sm:p-6 rounded-2xl"><h3 class="text-title_black font-bold text-2xl">3 a 5 min</h3><p class="mt-2 text-title_black font-semibold">para responder no WhatsApp</p></div>
 				</div>
 			</div>
 		</div>
@@ -38,7 +38,7 @@ ob_start();
 					<div class="flex items-center gap-2.5"><img class="rotate" src="<?php echo $static_url; ?>/img/title-icon.svg" alt=""><span class="text-base lg:text-lg font-semibold leading-[1.1]! text-verde-escuro uppercase">Como trabalhamos</span></div>
 					<h2 class="text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-title_black mt-4">O que é um correspondente bancário, e por que isso é bom para você</h2>
 					<p class="mt-4 text-base sm:text-lg text-paragraph_black">Correspondente bancário é a empresa autorizada a intermediar operações de crédito em nome de instituições financeiras, conforme a Resolução CMN 4.935/2021. Não emprestamos dinheiro: analisamos o seu caso, montamos a proposta e a apresentamos às instituições com as quais temos contrato.</p>
-					<p class="mt-3 text-base sm:text-lg text-paragraph_black">Como trabalhamos com mais de 15 instituições, não temos produto próprio para defender. Comparamos, explicamos a diferença entre as propostas e recomendamos a que faz mais sentido para o seu caixa, e não para a nossa comissão.</p>
+					<p class="mt-3 text-base sm:text-lg text-paragraph_black">Como trabalhamos com vários bancos parceiros, não temos produto próprio para defender. Comparamos, explicamos a diferença entre as propostas e recomendamos a que faz mais sentido para o seu caixa, e não para a nossa comissão.</p>
 				</div>
 				<div class="lg:max-w-140 w-full grid gap-4">
 					<div class="bg-background border border-border p-6 rounded-2xl"><h3 class="text-title_black text-lg font-semibold">Como somos remunerados</h3><p class="mt-2 text-paragraph_black">Pela instituição financeira, somente quando a operação é concluída. O cliente não paga nada à Logos.</p></div>
@@ -52,10 +52,10 @@ ob_start();
 	<section class="section-spacing-md-lg bg-background" id="equipe">
 		<div class="container">
 			<?php echo section_title('Equipe', 'Quem atende você', 'Atendimento humano, em horário comercial, pela mesma pessoa do início ao fim do processo.', false, true); ?>
-			<div class="grid sm:grid-cols-3 gap-5 max-w-215 mx-auto">
-				<?php foreach ([['AB', 'Ademilson Bevenutto', '<span class="confirmar">Cargo e minibio</span>'], ['?', '<span class="confirmar">Nome</span>', '<span class="confirmar">Cargo e minibio</span>'], ['?', '<span class="confirmar">Nome</span>', '<span class="confirmar">Cargo e minibio</span>']] as $p): ?>
+			<div class="grid gap-5 max-w-80 mx-auto">
+				<?php foreach ([['AB', 'Ademilson Bevenutto', 'À frente da Logos desde 1998']] as $p): ?>
 				<div class="bg-white border border-border rounded-2xl p-6 text-center">
-					<div class="w-24 h-24 mx-auto rounded-full bg-verde-claro border-2 border-dashed border-[#C99A00] flex items-center justify-center text-verde-escuro text-2xl font-bold"><?php echo $p[0]; ?></div>
+					<div class="w-24 h-24 mx-auto rounded-full bg-verde-claro flex items-center justify-center text-verde-escuro text-2xl font-bold"><?php echo $p[0]; ?></div>
 					<h3 class="text-title_black text-lg font-semibold mt-4"><?php echo $p[1]; ?></h3>
 					<p class="mt-1 text-sm text-paragraph_black"><?php echo $p[2]; ?></p>
 				</div>
@@ -83,7 +83,7 @@ ob_start();
 						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>WhatsApp: <a class="text-white underline underline-offset-4" href="<?php echo WHATS_URL; ?>" target="_blank" rel="noopener">(71) 99962-2679</a></span></li>
 						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>E-mail: <a class="text-white underline underline-offset-4" href="mailto:ademilson@logosconnect.com.br">ademilson@logosconnect.com.br</a> (domínio @logosconnect.com.br)</span></li>
 						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>Site: logosconnect.com.br</span></li>
-						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>Instagram: <a class="text-white underline underline-offset-4" href="https://www.instagram.com/logosconnect07/" target="_blank" rel="noopener">@logosconnect07</a> <span class="confirmar">confirmar</span></span></li>
+						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>Instagram: <a class="text-white underline underline-offset-4" href="https://www.instagram.com/logosconnect07/" target="_blank" rel="noopener">@logosconnect07</a></span></li>
 						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>Endereço: Av. Luís Viana Filho, 13223, Hangar Business Park, Hangar 4, Sala 118, Salvador, BA</span></li>
 						<li class="flex items-start gap-3"><svg class="w-5 h-5 fill-current mt-0.5 text-primary shrink-0"><use href="#roundedCheck"></use></svg><span>CNPJ 02.794.809/0001-68, ativo desde 1998</span></li>
 					</ul>
@@ -123,11 +123,11 @@ ob_start();
 					<div class="md:max-w-150 w-full">
 						<div class="flex items-center gap-2.5"><img class="rotate" src="<?php echo $static_url; ?>/img/title-icon-primary.svg" alt=""><span class="text-base font-semibold leading-[1.1]! text-primary uppercase">Para parceiros</span></div>
 						<h2 class="text-3xl md:text-4xl font-bold text-white leading-tight! mt-4">Contadores, corretores e consultores: indique e acompanhe</h2>
-						<p class="mt-4 text-paragraph_white">Se você atende empresários que precisam de crédito, a Logos analisa os casos indicados com a mesma atenção e mantém você informado do andamento. <span class="confirmar">Logos define condições de parceria e comissionamento</span></p>
+						<p class="mt-4 text-paragraph_white">Se você atende empresários que precisam de crédito, a Logos analisa os casos indicados com a mesma atenção e mantém você informado do andamento.</p>
 					</div>
 					<div class="flex flex-col gap-3">
 						<?php echo btn_whats('Quero ser parceiro', 'parceiros'); ?>
-						<p class="text-sm text-paragraph_white">Já é parceiro? <span class="confirmar">link da plataforma de propostas</span></p>
+						<p class="text-sm text-paragraph_white">Já é parceiro? Fale direto com o Ademilson pelo WhatsApp.</p>
 					</div>
 				</div>
 			</div>
@@ -141,7 +141,7 @@ ob_start();
 				<h2 class="text-3xl md:text-4xl font-bold leading-tight text-title_black mt-4">Como tratamos os seus dados</h2>
 				<p class="mt-4 text-paragraph_black">Os dados informados nos formulários deste site (nome, contato, informações da empresa e do imóvel) são usados exclusivamente para a análise do seu pedido de crédito e para o contato do nosso especialista, com base no seu consentimento e na execução das etapas preliminares do contrato (Lei 13.709/2018, art. 7º, I e V).</p>
 				<p class="mt-3 text-paragraph_black">Não enviamos seus dados a nenhuma instituição financeira sem a sua autorização expressa, e não compartilhamos com terceiros para outras finalidades. Você pode pedir acesso, correção ou exclusão dos seus dados a qualquer momento pelo e-mail <a class="underline" href="mailto:ademilson@logosconnect.com.br">ademilson@logosconnect.com.br</a>.</p>
-				<p class="mt-3 text-sm text-paragraph_black">Texto-base para revisão jurídica da Logos. <span class="confirmar">Logos indica o encarregado de dados (DPO) e valida a política</span></p>
+				<p class="mt-3 text-sm text-paragraph_black">Encarregado pelo tratamento de dados (DPO): Ademilson Bevenutto — <a class="underline" href="mailto:ademilson@logosconnect.com.br">ademilson@logosconnect.com.br</a>.</p>
 			</div>
 		</div>
 	</section>

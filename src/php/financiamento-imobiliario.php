@@ -19,8 +19,8 @@ ob_start();
 						<?php echo btn_whats('Falar com especialista', 'hero-fin', 'button-autline-dark text-title_black! hover:text-white!'); ?>
 					</div>
 					<div class="mt-8 pt-6 border-t border-border flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold" data-button>
-						<span class="flex items-center gap-2 text-verde-escuro"><?php echo ico('bank', 'w-4.5 h-4.5'); ?><span class="text-paragraph_black">Até <span class="confirmar">90%</span> do valor do imóvel</span></span>
-						<span class="flex items-center gap-2 text-verde-escuro"><?php echo ico('clock', 'w-4.5 h-4.5'); ?><span class="text-paragraph_black">Prazo de até <span class="confirmar">420 meses</span></span></span>
+						<span class="flex items-center gap-2 text-verde-escuro"><?php echo ico('bank', 'w-4.5 h-4.5'); ?><span class="text-paragraph_black">Até 90% do valor do imóvel</span></span>
+						<span class="flex items-center gap-2 text-verde-escuro"><?php echo ico('clock', 'w-4.5 h-4.5'); ?><span class="text-paragraph_black">Prazo de até 420 meses</span></span>
 						<span class="flex items-center gap-2 text-verde-escuro"><?php echo ico('shield', 'w-4.5 h-4.5'); ?><span class="text-paragraph_black">Uso do FGTS quando permitido</span></span>
 					</div>
 				</div>
@@ -49,7 +49,7 @@ ob_start();
 					['home', 'Imóvel residencial', 'Casa ou apartamento, novo ou usado, para morar ou investir. Com ou sem uso do FGTS.'],
 					['building', 'Imóvel comercial', 'Sala, loja, galpão ou prédio para a sua empresa, em nome da pessoa física ou do CNPJ.'],
 					['swap', 'Portabilidade', 'Já tem financiamento com taxa alta? Transferimos o saldo para uma instituição com condição melhor.'],
-					['doc', 'Construção e terreno', 'Compra de terreno e financiamento da obra, conforme as regras de cada instituição. <span class="confirmar">confirmar oferta</span>'],
+					['doc', 'Construção e terreno', 'Compra de terreno e financiamento da obra, conforme as regras de cada instituição.'],
 				] as $c): ?>
 				<div class="bg-background border border-border p-6 rounded-2xl" data-sttr-card data-tilt="4">
 					<span class="w-12 h-12 rounded-xl bg-verde-claro text-verde-escuro flex items-center justify-center"><?php echo ico($c[0]); ?></span>
@@ -66,11 +66,11 @@ ob_start();
 			<?php echo section_title('Como funciona', 'Do pedido de análise às chaves', 'Conferimos cada etapa para evitar retrabalho, inclusive a documentação do vendedor.'); ?>
 			<?php echo passos([
 				['titulo' => 'Análise de perfil', 'texto' => 'Renda, entrada disponível, uso de FGTS e tipo de imóvel. Dizemos quanto você pode financiar e em quais bancos.', 'tags' => [['Logos', 1], ['1 dia útil', 0]]],
-				['titulo' => 'Aprovação de crédito', 'texto' => 'Enviamos a documentação às instituições escolhidas e comparamos as aprovações: taxa, sistema de amortização e parcela.', 'tags' => [['Logos', 1], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Avaliação do imóvel', 'texto' => 'O banco avalia o imóvel escolhido. Orientamos o vendedor sobre a documentação necessária.', 'tags' => [['Banco', 0], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Contrato e ITBI', 'texto' => 'Emissão do contrato, pagamento do ITBI e assinatura. Conferimos cada etapa para evitar retrabalho.', 'tags' => [['Banco + prefeitura', 0], ['<span class="confirmar">5 a 10 dias</span>', 0]]],
-				['titulo' => 'Registro em cartório', 'texto' => 'Registro do contrato na matrícula do imóvel. Acompanhamos até a conclusão.', 'tags' => [['Cartório', 0], ['<span class="confirmar">10 a 20 dias</span>', 0]]],
-				['titulo' => 'Liberação e chaves', 'texto' => 'O banco paga o vendedor e o imóvel é seu.', 'tags' => [['Banco', 0], ['<span class="confirmar">1 a 5 dias</span>', 0]]],
+				['titulo' => 'Aprovação de crédito', 'texto' => 'Enviamos a documentação às instituições escolhidas e comparamos as aprovações: taxa, sistema de amortização e parcela.', 'tags' => [['Logos', 1]]],
+				['titulo' => 'Avaliação do imóvel', 'texto' => 'O banco avalia o imóvel escolhido. Orientamos o vendedor sobre a documentação necessária.', 'tags' => [['Banco', 0]]],
+				['titulo' => 'Contrato e ITBI', 'texto' => 'Emissão do contrato, pagamento do ITBI e assinatura. Conferimos cada etapa para evitar retrabalho.', 'tags' => [['Banco + prefeitura', 0]]],
+				['titulo' => 'Registro em cartório', 'texto' => 'Registro do contrato na matrícula do imóvel. Acompanhamos até a conclusão.', 'tags' => [['Cartório', 0]]],
+				['titulo' => 'Liberação e chaves', 'texto' => 'O banco paga o vendedor e o imóvel é seu.', 'tags' => [['Banco', 0]]],
 			]); ?>
 		</div>
 	</section>
@@ -107,7 +107,7 @@ ob_start();
 			<?php echo faq([
 				['É possível financiar 100% do imóvel, sem entrada?', 'Não. O limite costuma ser de 80% do valor do imóvel; em algumas situações, alguns bancos chegam a 90%. A diferença é a entrada. Exemplo: para um imóvel de R$ 200 mil, a entrada é de pelo menos R$ 40 mil e o financiamento, de R$ 160 mil.'],
 				['Em quanto tempo posso pagar?', 'A maioria das instituições financia em até 30 anos; algumas chegam a 35 anos. O prazo também depende da idade do comprador mais velho na composição de renda.'],
-				['Posso usar o FGTS como entrada?', 'Sim, se você tem pelo menos três anos de trabalho com carteira assinada (somados), não usou o FGTS nos últimos dois anos e o imóvel está dentro do limite de valor do programa. <span class="confirmar">confirmar limite vigente</span> O saldo pode ser consultado no aplicativo FGTS.'],
+				['Posso usar o FGTS como entrada?', 'Sim, se você tem pelo menos três anos de trabalho com carteira assinada (somados), não usou o FGTS nos últimos dois anos e o imóvel atende às regras vigentes do programa. O uso é opcional. O saldo pode ser consultado no aplicativo FGTS.'],
 				['Posso compor renda com outra pessoa?', 'Sim. Cada banco tem regras próprias sobre a quantidade de pessoas e o grau de parentesco. Orientamos a melhor composição para o seu caso.'],
 				['O financiamento tem seguro?', 'Dois, obrigatórios: o DFI (danos físicos ao imóvel) e o MIP (morte e invalidez permanente). Eles protegem o imóvel e a família e já entram no cálculo da parcela que apresentamos.'],
 				['Quais documentos são necessários?', 'Em geral: documentos de identificação e comprovante de renda dos compradores (holerite, extrato ou imposto de renda, conforme o banco), comprovante de residência, documentos do vendedor e matrícula do imóvel. A lista exata é enviada pelo especialista.'],
